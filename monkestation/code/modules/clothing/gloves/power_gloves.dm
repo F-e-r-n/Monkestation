@@ -50,7 +50,7 @@
 		log_combat(owner, target, "zapped", /obj/item/clothing/gloves/color/yellow/power_gloves, "[power] watts were used resulting in [shock_damage] damage.")
 
 	else
-		electrocute_victim.dust(TRUE, FALSE, TRUE)
+		electrocute_victim.dust(TRUE, TRUE, TRUE)
 		log_combat(owner, target, "zapped", /obj/item/clothing/gloves/color/yellow/power_gloves, "[power] watts were used resulting in the target dusting.")
 		return
 
