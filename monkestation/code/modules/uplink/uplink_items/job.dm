@@ -67,7 +67,7 @@
 
 /datum/uplink_item/role_restricted/power_gloves
 	name = "Power Gloves"
-	desc = "Are the Engineers on your station creating too much power? Use this to set them in their place. T-ray scanner not included"
+	desc = "Have a co-worker that you want to reach a SHOCKING conclusion? Use your beloved engine against them! Now you're playing with power. T-ray scanner not included."
 	cost = 8
 	item = /obj/item/clothing/gloves/color/yellow/power_gloves
 	restricted_roles = list(JOB_STATION_ENGINEER, JOB_CHIEF_ENGINEER, JOB_ATMOSPHERIC_TECHNICIAN)
