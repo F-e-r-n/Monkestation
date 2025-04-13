@@ -27,6 +27,23 @@
 
 	var/list/alarm_types_show = list(ALARM_ATMOS = 0, ALARM_ALARM_POWER = 0, ALARM_CAMERA = 0, ALARM_MOTION = 0)
 	var/list/alarm_types_clear = list(ALARM_ATMOS = 0, ALARM_ALARM_POWER = 0, ALARM_CAMERA = 0, ALARM_MOTION = 0)
+	var/list/static/law_choices = list(
+	"asimovpp",
+	"paladin",
+	"robocop",
+	"corporate",
+	"hippocratic",
+	"maintain",
+	"liveandletlive",
+	"peacekeeper",
+	"ten_commandments",
+	"nutimov",
+	"reporter",
+	"hulkamania",
+	"tyrant",
+	"overlord",
+	"painter",
+	"dungeon_master")
 
 	//These lists will contain each law that should be announced / set to yes in the state laws menu.
 	///List keeping track of which laws to announce

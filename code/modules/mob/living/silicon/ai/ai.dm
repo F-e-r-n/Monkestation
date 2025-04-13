@@ -29,6 +29,7 @@
 	mob_size = MOB_SIZE_LARGE
 	radio = /obj/item/radio/headset/silicon/ai
 	can_buckle_to = FALSE
+	var/choose_laws = TRUE
 	var/battery = 200 //emergency power if the AI's APC is off
 	var/list/network = list("ss13")
 	var/obj/machinery/camera/current
@@ -130,6 +131,12 @@
 		laws.associate(src)
 		for (var/law in laws.inherent)
 			lawcheck += law
+	else if(choose_laws == TRUE) //turn this into a config option
+		if(!isnull(law_choices))
+			laws = tgui_input_list(src, "Pick your lawset", "Select your laws", law_choices)
+		else if(isnull(laws))
+			laws.set_laws_config()
+		laws.associate(src)
 	else
 		make_laws()
 		for (var/law in laws.inherent)

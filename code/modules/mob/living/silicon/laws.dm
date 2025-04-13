@@ -1,3 +1,4 @@
+
 /mob/living/silicon/proc/show_laws()
 	laws_sanity_check()
 	var/list/law_box = list(span_bold("Obey these laws:"))
